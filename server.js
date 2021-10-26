@@ -24,6 +24,9 @@ app.get('/', (req,res) => {
 
 let students = []
 
+rollbar.log
+
+
 app.post('/api/student', (req, res) => {
     const {name} = req.body
     name = name.trim()
